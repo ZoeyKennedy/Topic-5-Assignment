@@ -55,9 +55,9 @@ namespace Topic_5_Assignment
                 {
                     bankBalance = bankBalance - billPaymentPrice - 0.75;
                     Console.WriteLine("Your new bank balancce is " + bankBalance);
-                }
-                if (YesOrNo == "NO") ;
-                {
+                    }
+                    if (YesOrNo == "NO") ;
+                    {
                     Console.WriteLine("Would you like to complete a different transaction?"); //??
                     YesOrNo = Console.ReadLine();
                     if (YesOrNo == "YES")
@@ -73,6 +73,12 @@ namespace Topic_5_Assignment
                 Console.WriteLine("Your account balance is " + bankBalance);
 
             }
+            else
+            {
+
+            //restart
+            }
+                 
         }
     }
 } 
