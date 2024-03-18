@@ -55,10 +55,9 @@ namespace Topic_5_Assignment
                 {
                     bankBalance = bankBalance - billPaymentPrice - 0.75;
                     Console.WriteLine("Your new account balancce is " + bankBalance);
-                  
-                }
+                    }
 
-                    if (YesOrNo == "NO")
+                    else if (YesOrNo == "NO") 
                 {
                     bankBalance = bankBalance - 0.75;
                     Console.WriteLine("Your new account balance is " + bankBalance);
@@ -77,6 +76,19 @@ namespace Topic_5_Assignment
             {
                 Console.WriteLine("");
             }
+
+
+
+            //Parking garage cost
+
+            int minutes;
+            int hours;
+
+            Console.WriteLine("How many minutes were you parked in Sam's Parking Garage?");
+            minutes = Convert.ToInt32(Console.ReadLine());
+            hours = minutes / 60;
+            Console.WriteLine("You were parked for " + hours + " hours.");
+
         }
     }
 } 
