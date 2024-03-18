@@ -51,20 +51,19 @@ namespace Topic_5_Assignment
                 Console.WriteLine("Your " + billName + " bill costs " + billPaymentPrice.ToString("C") + ". Would you like to pay it now? (Type Yes or No)");
                 YesOrNo = Console.ReadLine();
                 YesOrNo = YesOrNo.ToUpper();
-                if (YesOrNo == "YES") ;
+                if (YesOrNo == "YES") 
                 {
                     bankBalance = bankBalance - billPaymentPrice - 0.75;
-                    Console.WriteLine("Your new bank balancce is " + bankBalance);
-                    }
-                    if (YesOrNo == "NO") ;
-                    {
-                    Console.WriteLine("Would you like to complete a different transaction?"); //??
-                    YesOrNo = Console.ReadLine();
-                    if (YesOrNo == "YES")
-                    {
-                        bank();// ?????
-                    }
+                    Console.WriteLine("Your new account balancce is " + bankBalance);
+                  
                 }
+
+                    if (YesOrNo == "NO")
+                {
+                    bankBalance = bankBalance - 0.75;
+                    Console.WriteLine("Your new account balance is " + bankBalance);
+                }
+                    
 
             }
             else if (transactionName == "ACCOUNT BALANCE")
@@ -73,12 +72,11 @@ namespace Topic_5_Assignment
                 Console.WriteLine("Your account balance is " + bankBalance);
 
             }
+            
             else
             {
-
-            //restart
+                Console.WriteLine("");
             }
-                 
         }
     }
 } 
