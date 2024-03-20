@@ -83,11 +83,26 @@ namespace Topic_5_Assignment
 
             int minutes;
             int hours;
+            double cost;
+
 
             Console.WriteLine("How many minutes were you parked in Sam's Parking Garage?");
             minutes = Convert.ToInt32(Console.ReadLine());
             hours = minutes / 60;
+           if (minutes % 60 > 0)
+            {
+                hours += 1;
+            }
             Console.WriteLine("You were parked for " + hours + " hours.");
+
+            cost = 4 + ((hours -1) * 2.00);
+            if (cost > 20)
+            {
+                cost = 20;
+            }
+            Console.WriteLine("You owe " + cost.ToString("C"));
+
+
 
         }
     }
