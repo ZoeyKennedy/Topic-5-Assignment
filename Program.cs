@@ -103,6 +103,64 @@ namespace Topic_5_Assignment
             Console.WriteLine("You owe " + cost.ToString("C"));
 
 
+            //Hurricane 
+
+
+            int category; 
+
+            Console.WriteLine("Which cateogry hurricane do you want to know the wind speed of?");
+            Console.WriteLine("Type 1, 2, 3, 4 or 5");
+            category = Convert.ToInt32(Console.ReadLine());
+
+            switch (category)
+            {
+                case 1:
+                 Console.WriteLine("74-95 mph/hr");
+                 Console.WriteLine("64-82 kt/hr");
+                 Console.WriteLine("119-153 km/hr");
+                    break;
+                case 2:
+                    Console.WriteLine("90-110 mph/hr");
+                    Console.WriteLine("83-95 kt/hr");
+                    Console.WriteLine("154-177 km/hr");
+                    break;
+                case 3:
+                 Console.WriteLine("111-130 mph/hr");
+                 Console.WriteLine("96-113 kt/hr");
+                 Console.WriteLine("178-209 km/hr");
+                    break;
+                case 4:
+                    Console.WriteLine("131-155 mph/hr");
+                    Console.WriteLine("114-135 kt/hr");
+                    Console.WriteLine("210-249 km/hr");
+                    break;
+                case 5:
+                    Console.WriteLine("Greater than 155 mph/hr");
+                    Console.WriteLine("Greater than 135 kt/hr");
+                    Console.WriteLine("Greater than 249 km/hr");
+                    break;
+            }
+
+
+
+            //if (category == 1 ) 
+            // {
+            //     Console.WriteLine("74-95 mph/hr");
+            //     Console.WriteLine("64-82 kt/hr");
+            //     Console.WriteLine("119-153 km/hr");
+            //  }
+            // if (category == 2)
+            //  {
+            //     Console.WriteLine("90-110 mph/hr");
+            //       Console.WriteLine("83-95 kt/hr");
+            //       Console.WriteLine("154-177 km/hr");
+            //   }
+            //   if (category == 3)
+            //  {
+            //      Console.WriteLine(" mph/hr");
+            //     Console.WriteLine(" kt/hr");
+            //      Console.WriteLine(" km/hr");
+            //  }
 
         }
     }
